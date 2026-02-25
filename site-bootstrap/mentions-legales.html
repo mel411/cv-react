@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mentions légales - CV</title>
+
+  <meta name="robots" content="noindex, nofollow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header class="bg-dark border-bottom border-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark container py-3">
+      <a class="navbar-brand fw-bold" href="index.html">John Doe</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+        <ul class="navbar-nav gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="realisations.html">Réalisations</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Me contacter</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="page-banner">
+    <div class="banner-inner">
+      <h1 class="banner-title">Mentions légales</h1>
+      <p class="banner-subtitle">Informations générales (projet de formation).</p>
+    </div>
+  </section>
+
+  <main class="container py-5">
+    <div class="soft-card soft-pad">
+      <div class="accordion" id="legalAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#editor">
+              Éditeur du site
+            </button>
+          </h2>
+          <div id="editor" class="accordion-collapse collapse show" data-bs-parent="#legalAccordion">
+            <div class="accordion-body">
+              <strong>John Doe</strong><br>
+              40 Rue Laure Diebold, 69009 Lyon, France<br>
+              Téléphone : 06 20 30 40 50<br>
+              Email : john.doe@gmail.com
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#host">
+              Hébergeur
+            </button>
+          </h2>
+          <div id="host" class="accordion-collapse collapse" data-bs-parent="#legalAccordion">
+            <div class="accordion-body">
+              GitHub Pages
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#credits">
+              Crédits
+            </button>
+          </h2>
+          <div id="credits" class="accordion-collapse collapse" data-bs-parent="#legalAccordion">
+            <div class="accordion-body">
+              Site développé dans le cadre d’une formation.<br>
+              Images utilisées pour l’illustration : dossier <code>/img</code>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container py-5">
+      <div class="row text-center text-md-start g-4">
+        <div class="col-md-3">
+          <h5 class="mb-3">John Doe</h5>
+          <p class="mb-1">40 Rue Laure Diebold</p>
+          <p class="mb-1">69009 Lyon, France</p>
+          <p class="mb-0">Téléphone : 06 20 30 40 50</p>
+        </div>
+
+        <div class="col-md-3">
+          <h5 class="mb-3">Liens utiles</h5>
+          <ul class="list-unstyled mb-0">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#apropos">À propos</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Me contacter</a></li>
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h5 class="mb-3">Dernières réalisations</h5>
+          <ul class="list-unstyled mb-0">
+            <li><a href="realisations.html">Fresh food</a></li>
+            <li><a href="realisations.html">Restaurant Akira</a></li>
+            <li><a href="realisations.html">Espace bien-être</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h5 class="mb-3">Derniers articles</h5>
+          <ul class="list-unstyled mb-0">
+            <li><a href="blog.html">Coder son site en HTML/CSS</a></li>
+            <li><a href="blog.html">Vendre ses produits sur le web</a></li>
+            <li><a href="blog.html">Se positionner sur Google</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom text-center py-3">
+      © Designed by John Doe
+    </div>
+  </footer>
+
+  <button id="backToTop" class="btn btn-primary back-to-top" aria-label="Retour en haut">↑</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

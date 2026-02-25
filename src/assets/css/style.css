@@ -1,0 +1,239 @@
+/* =========
+   Base
+   ========= */
+:root{
+  --bg: #f2f4f7;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --card: #ffffff;
+  --shadow: 0 12px 30px rgba(0,0,0,.08);
+  --radius: 18px;
+}
+
+body{
+  font-family: "Nunito Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+h1,h2,h3,h4,h5,h6{
+  color: #111827;
+  font-weight: 700;
+}
+
+a{ color: inherit; }
+a:hover{ opacity: .9; }
+
+/* =========
+   Navbar
+   ========= */
+.navbar{
+  letter-spacing: .02em;
+}
+
+.navbar .nav-link{
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: .9rem;
+  opacity: .9;
+}
+
+.navbar .nav-link.active{
+  opacity: 1;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+/* =========
+   Hero / Banners
+   ========= */
+.hero{
+  min-height: 75vh;
+  background: url("../../img/hero-bg.jpg") center/cover no-repeat;
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: 72px 12px;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,.55);
+}
+
+.hero .hero-inner{
+  position: relative;
+  max-width: 980px;
+}
+
+.hero-title{
+  font-weight: 800;
+  letter-spacing: .01em;
+}
+
+.page-banner{
+  min-height: 280px;
+  position: relative;
+  background: url("../../img/banner.jpg") center/cover no-repeat;
+  display: grid;
+  place-items: center;
+  padding: 64px 12px;
+}
+
+.page-banner::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,.55);
+}
+
+.page-banner .banner-inner{
+  position: relative;
+  max-width: 900px;
+}
+
+.banner-title{
+  color: #fff;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.banner-subtitle{
+  color: rgba(255,255,255,.9);
+  text-align: center;
+  margin: 0;
+}
+
+/* Different banner images per page */
+.banner-services{ background-image: url("../../img/services-bg.jpg"); }
+.banner-contact{ background-image: url("../../img/contact-bg.jpg"); }
+
+/* =========
+   Sections / Cards
+   ========= */
+.section-title{
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.section-line{
+  width: 74px;
+  height: 4px;
+  background: #0d6efd;
+  margin: 0 auto 28px;
+  border-radius: 99px;
+}
+
+.soft-card{
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 0;
+}
+
+.soft-pad{
+  padding: 26px;
+}
+
+/* Portfolio / Blog images */
+.card-img-top{
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+/* About image */
+.about-img{
+  border-radius: 14px;
+  box-shadow: 0 10px 26px rgba(0,0,0,.12);
+}
+
+/* Progress bars */
+.progress{
+  height: 10px;
+  border-radius: 999px;
+  background: #e5e7eb;
+}
+.progress-bar{
+  border-radius: 999px;
+}
+
+/* =========
+   Footer
+   ========= */
+.site-footer{
+  background: #e9ecef;
+  margin-top: 60px;
+}
+
+.site-footer a{
+  text-decoration: none;
+  color: #0f172a;
+}
+
+.site-footer a:hover{
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.footer-bottom{
+  background: #111827;
+  color: rgba(255,255,255,.9);
+}
+
+/* =========
+   Back to top button
+   ========= */
+.back-to-top{
+  position: fixed;
+  bottom: 26px;
+  right: 26px;
+  width: 52px;
+  height: 52px;
+  border-radius: 999px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 14px 28px rgba(0,0,0,.20);
+  z-index: 999;
+  font-weight: 800;
+}
+
+/* small tweaks */
+.small-muted{ color: var(--muted); }
+
+/* Responsive hero text */
+@media (max-width: 576px){
+  .hero{ min-height: 70vh; }
+  .hero-title{ font-size: 2.2rem; }
+}
+/* ===== FORCE HERO TEXT WHITE (override all headings) ===== */
+.hero h1,
+.hero h2,
+.hero p {
+  color: #ffffff !important;
+}
+/* ===== Footer arrows like maquette ===== */
+
+footer ul li a {
+  text-decoration: none;
+  color: #333;
+  position: relative;
+  padding-left: 16px;
+  display: inline-block;
+  transition: color 0.2s ease;
+}
+
+footer ul li a::before {
+  content: "›";
+  position: absolute;
+  left: 0;
+  color: #0d6efd; /* bootstrap blue */
+  font-weight: bold;
+}
+
+footer ul li a:hover {
+  color: #0d6efd;
+}

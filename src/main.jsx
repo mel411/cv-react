@@ -1,0 +1,19 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import { ProfileProvider } from "./context/ProfileContext.jsx";
+
+// Bootstrap CSS + JS (navbar toggler will work)
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
+// Your CSS
+import "./assets/css/style.css";
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <ProfileProvider>
+      <App />
+    </ProfileProvider>
+  </React.StrictMode>
+);
