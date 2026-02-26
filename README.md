@@ -4,7 +4,7 @@
 Site CV / Portfolio réalisé avec React (Vite) et Bootstrap, basé sur les maquettes fournies.
 
 Le site contient :
-- Une page d’accueil
+- Une page Accueil
 - Une page Services
 - Une page Réalisations
 - Une page Blog (6 articles minimum)
@@ -21,9 +21,13 @@ Le site contient :
 
 ---
 
+## Prérequis
+- Node.js installé
+- npm installé
+
+---
+
 ## Installation
-
-1. Installer les dépendances :
-
+1. Cloner le repository :
 ```bash
-npm install
+git clone https://github.com/mel411/cv-react.git
